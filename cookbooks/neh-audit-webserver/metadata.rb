@@ -1,0 +1,7 @@
+name 'neh-audit-webserver'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures neh-audit-webserver'
+long_description 'Installs/Configures neh-audit-webserver'
+version '0.1.0'

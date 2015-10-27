@@ -1,0 +1,76 @@
+{
+  "revision_id": "ecdd7fa5e10efae934cab4108d1edc018076627b1e84d923fae89c4869a4e390",
+  "name": "neh-webserver",
+  "run_list": [
+    "recipe[neh-webserver::default]",
+    "recipe[neh-audit-webserver::default]"
+  ],
+  "cookbook_locks": {
+    "neh-webserver": {
+      "version": "0.2.0",
+      "identifier": "3241664d363a2d1777224c0c3e12e434b7653129",
+      "dotted_decimal_identifier": "14145656473401901.6604913652809234.250915066294569",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": null,
+        "working_tree_clean": true,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    },
+    "neh-audit-webserver": {
+      "version": "0.1.0",
+      "identifier": "7857f659b02fbe2d43434f0837a5cd8ad76c6f33",
+      "dotted_decimal_identifier": "33873712783568830.12740330319787941.225996203388723",
+      "source": "../neh-audit-webserver",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": null,
+        "working_tree_clean": true,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "../neh-audit-webserver"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "neh-webserver",
+        ">= 0.0.0"
+      ],
+      [
+        "neh-audit-webserver",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "neh-audit-webserver (0.1.0)": [
+
+      ],
+      "neh-webserver (0.2.0)": [
+
+      ]
+    }
+  }
+}

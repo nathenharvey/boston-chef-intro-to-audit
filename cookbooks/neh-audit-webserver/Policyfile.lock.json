@@ -1,0 +1,48 @@
+{
+  "revision_id": "04174ee6965a13444d5e351912063eec71200936c683b2d98706614a53eddacd",
+  "name": "neh-audit-webserver",
+  "run_list": [
+    "recipe[neh-audit-webserver::default]"
+  ],
+  "cookbook_locks": {
+    "neh-audit-webserver": {
+      "version": "0.1.0",
+      "identifier": "7857f659b02fbe2d43434f0837a5cd8ad76c6f33",
+      "dotted_decimal_identifier": "33873712783568830.12740330319787941.225996203388723",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": null,
+        "working_tree_clean": true,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "neh-audit-webserver",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "neh-audit-webserver (0.1.0)": [
+
+      ]
+    }
+  }
+}
