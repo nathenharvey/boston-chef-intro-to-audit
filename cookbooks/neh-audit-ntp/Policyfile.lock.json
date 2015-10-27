@@ -1,5 +1,5 @@
 {
-  "revision_id": "c1d6d352ea5e493adc8f3900318f5a30537b4b999fb86a82e218df5377c062e3",
+  "revision_id": "a3cf161577e7c6f226f273a55e76dca18e7cc65df1510b6a27cd780d65e43120",
   "name": "neh-audit-ntp",
   "run_list": [
     "recipe[neh-audit-ntp::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "neh-audit-ntp": {
       "version": "0.1.0",
-      "identifier": "18aeb32ceb06114308b9a0772e1a9907f27761cd",
-      "dotted_decimal_identifier": "6947484017034769.18868416793751066.168259411730893",
+      "identifier": "c8e0f72e308c482c61ea8559c7573c17173a7188",
+      "dotted_decimal_identifier": "56542347578608712.12492558862763863.66069871620488",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:nathenharvey/boston-chef-intro-to-audit.git",
-        "revision": "95b641c09ba0d3345be46dd6bae3faf7e5fde352",
+        "revision": "1008a1e09cf8c6a2d36903eab50febda7f288217",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
