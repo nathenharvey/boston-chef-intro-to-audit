@@ -11,8 +11,10 @@ default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
 run_list "neh-webserver::default",
-  "neh-audit-webserver::default"
+  "neh-audit-webserver::default",
+  "neh-audit-ntp::default"
 
 # Specify a custom source for a single cookbook:
 cookbook "neh-webserver", path: "."
 cookbook "neh-audit-webserver", path: "../neh-audit-webserver"
+cookbook "neh-audit-ntp", path: "../neh-audit-ntp"

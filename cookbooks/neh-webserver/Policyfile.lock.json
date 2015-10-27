@@ -1,22 +1,23 @@
 {
-  "revision_id": "ecdd7fa5e10efae934cab4108d1edc018076627b1e84d923fae89c4869a4e390",
+  "revision_id": "c5cd189b913b47e1a33b60763cd16146225b40cb2bcb7c51e952db6eb6381cdb",
   "name": "neh-webserver",
   "run_list": [
     "recipe[neh-webserver::default]",
-    "recipe[neh-audit-webserver::default]"
+    "recipe[neh-audit-webserver::default]",
+    "recipe[neh-audit-ntp::default]"
   ],
   "cookbook_locks": {
     "neh-webserver": {
-      "version": "0.2.0",
-      "identifier": "3241664d363a2d1777224c0c3e12e434b7653129",
-      "dotted_decimal_identifier": "14145656473401901.6604913652809234.250915066294569",
+      "version": "0.3.0",
+      "identifier": "e5300ac76ab9de125a8a968561f6cff9d8fdcd38",
+      "dotted_decimal_identifier": "64510592520206814.5166100858102262.228671994318136",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": null,
-        "working_tree_clean": true,
+        "remote": "git@github.com:nathenharvey/boston-chef-intro-to-audit.git",
+        "revision": "cc5cf128778f0f6a427f6cb5cc1e75616344f612",
+        "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
 
@@ -28,15 +29,15 @@
     },
     "neh-audit-webserver": {
       "version": "0.1.0",
-      "identifier": "7857f659b02fbe2d43434f0837a5cd8ad76c6f33",
-      "dotted_decimal_identifier": "33873712783568830.12740330319787941.225996203388723",
+      "identifier": "04eed646ecee05c3daacfb2ffa40e16357b11e68",
+      "dotted_decimal_identifier": "1388503987187205.55128056942033472.247816789237352",
       "source": "../neh-audit-webserver",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": null,
-        "working_tree_clean": true,
+        "remote": "git@github.com:nathenharvey/boston-chef-intro-to-audit.git",
+        "revision": "cc5cf128778f0f6a427f6cb5cc1e75616344f612",
+        "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
 
@@ -44,6 +45,26 @@
       },
       "source_options": {
         "path": "../neh-audit-webserver"
+      }
+    },
+    "neh-audit-ntp": {
+      "version": "0.1.0",
+      "identifier": "1e9adf7b9db053b6f13c35b336fee05ca5c072d5",
+      "dotted_decimal_identifier": "8614533943636051.51493686662608638.246688522466005",
+      "source": "../neh-audit-ntp",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "git@github.com:nathenharvey/boston-chef-intro-to-audit.git",
+        "revision": "cc5cf128778f0f6a427f6cb5cc1e75616344f612",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "../neh-audit-ntp"
       }
     }
   },
@@ -62,13 +83,20 @@
       [
         "neh-audit-webserver",
         ">= 0.0.0"
+      ],
+      [
+        "neh-audit-ntp",
+        ">= 0.0.0"
       ]
     ],
     "dependencies": {
       "neh-audit-webserver (0.1.0)": [
 
       ],
-      "neh-webserver (0.2.0)": [
+      "neh-audit-ntp (0.1.0)": [
+
+      ],
+      "neh-webserver (0.3.0)": [
 
       ]
     }
