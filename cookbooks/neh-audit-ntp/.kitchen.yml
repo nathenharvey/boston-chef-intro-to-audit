@@ -1,6 +1,7 @@
 ---
 driver:
-  name: vagrant
+  name: docker
+  use_sudo: false
 
 ## The forwarded_port port feature lets you connect to ports on the VM guest via
 ## localhost on the host.
@@ -11,6 +12,8 @@ driver:
 
 provisioner:
   name: policyfile_zero
+  client_rb:
+    audit_mode: :audit_only
 
 ## require_chef_omnibus specifies a specific chef version to install. You can
 ## also set this to `true` to always use the latest version.
@@ -20,7 +23,6 @@ provisioner:
 
 platforms:
   - name: ubuntu-14.04
-  - name: centos-7.1
 
 suites:
   - name: default
