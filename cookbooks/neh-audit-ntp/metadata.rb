@@ -1,0 +1,7 @@
+name 'neh-audit-ntp'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures neh-audit-ntp'
+long_description 'Installs/Configures neh-audit-ntp'
+version '0.1.0'
